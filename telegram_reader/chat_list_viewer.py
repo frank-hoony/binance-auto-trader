@@ -2,7 +2,7 @@ import asyncio
 import logging
 from pyrogram import Client
 from pyrogram.enums import ChatType
-from config import TELEGRAM_CONFIG
+from config.telegram_config import TELEGRAM_CONFIG
 
 # 로깅 설정
 logging.basicConfig(level=logging.INFO)
@@ -183,8 +183,9 @@ class ChatListViewer:
                     print(config_code)
                     
                     # 파일로 저장
-                    with open('monitored_channels.txt', 'w', encoding='utf-8') as f:
+                    with open('config/monitored_channels.py', 'w', encoding='utf-8') as f:
                         f.write(config_code)
+
                     
                     print(f"\n💾 'monitored_channels.txt' 파일로 저장되었습니다!")
                     print("   이 내용을 config.py 파일에 복사해서 붙여넣으세요.")
