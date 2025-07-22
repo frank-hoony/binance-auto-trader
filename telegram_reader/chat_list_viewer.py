@@ -2,7 +2,7 @@ import asyncio
 import logging
 from pyrogram import Client
 from pyrogram.enums import ChatType
-from config.telegram_config import TELEGRAM_CONFIG
+from config.config import TELEGRAM_CONFIG
 
 # 로깅 설정
 logging.basicConfig(level=logging.INFO)

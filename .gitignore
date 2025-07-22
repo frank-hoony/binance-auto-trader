@@ -4,4 +4,5 @@ __pycache__/
 config/telegram_config.py
 *.session
 .env
+config/config.py
 
